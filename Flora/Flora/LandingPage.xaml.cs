@@ -7,9 +7,9 @@ using Xamarin.Forms;
 
 namespace Flora
 {
-    public partial class MainPage : ContentPage
+    public partial class LandingPage : ContentPage
     {
-        public MainPage()
+        public LandingPage()
         {
             InitializeComponent();
         }

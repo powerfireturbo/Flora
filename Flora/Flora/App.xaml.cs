@@ -11,7 +11,7 @@ namespace Flora
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new LandingPage();
         }
 
         protected override void OnStart()
