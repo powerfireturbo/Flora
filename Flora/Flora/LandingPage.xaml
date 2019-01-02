@@ -9,6 +9,10 @@
         <Label Text="Welcome to Flora" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+        <Button x:Name="GetStartedButton"
+                Margin="0,50,0,0"
+                Text="Get Started"
+                Clicked="GetStartedButton_Clicked"/>
     </StackLayout>
 
 </ContentPage>

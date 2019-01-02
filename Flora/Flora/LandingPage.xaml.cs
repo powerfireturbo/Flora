@@ -13,5 +13,10 @@ namespace Flora
         {
             InitializeComponent();
         }
+
+        private void GetStartedButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PickFromThreePage());
+        }
     }
 }
