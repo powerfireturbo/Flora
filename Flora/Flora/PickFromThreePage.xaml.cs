@@ -16,5 +16,20 @@ namespace Flora
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void GpsButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new GpsPage());
+        }
+
+        private void KeyButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new KeyPage());
+        }
+
+        private void DirectLookupButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new DirectLookupPage());
+        }
+    }
 }

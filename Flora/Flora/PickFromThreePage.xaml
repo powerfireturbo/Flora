@@ -8,6 +8,18 @@
             <Label Text="Welcome to the Pick From Three page"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="GpsButton"
+                Margin="0,50,0,0"
+                Text="GPS"
+                Clicked="GpsButton_Clicked"/>
+            <Button x:Name="KeyButton"
+                Margin="0,50,0,0"
+                Text="Key"
+                Clicked="KeyButton_Clicked"/>
+            <Button x:Name="DirectLookupButton"
+                Margin="0,50,0,0"
+                Text="Direct Lookup"
+                Clicked="DirectLookupButton_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
