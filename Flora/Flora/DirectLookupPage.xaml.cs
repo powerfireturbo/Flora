@@ -19,17 +19,17 @@ namespace Flora
 
         private void RefineButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new RefinePage());
         }
 
         private void ViewResultButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new PlantProfilePage());
         }
 
         private void StartOverButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new PickFromThreePage());
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Flora
 
         private void StartOverButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new PickFromThreePage());
         }
     }
 }

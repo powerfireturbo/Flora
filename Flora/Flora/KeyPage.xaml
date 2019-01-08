@@ -9,19 +9,19 @@
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand" />
             <Button x:Name="OptionOneButton"
-                    Margin="0,50,0,0"
+                    Margin="0,25,0,0"
                     Text="Option One"
                     Clicked="OptionOneButton_Clicked" />
             <Button x:Name="OptionTwoButton"
-                    Margin="0,50,0,0"
+                    Margin="0,25,0,0"
                     Text="Option Two"
                     Clicked="OptionTwoButton_Clicked" />
             <Button x:Name="OptionThreeButton"
-                    Margin="0,50,0,0"
+                    Margin="0,25,0,0"
                     Text="Option Three"
                     Clicked="OptionThreeButton_Clicked" />
             <Button x:Name="StartOverButton"
-                    Margin="0,50,0,0"
+                    Margin="0,25,0,0"
                     Text="Start Over"
                     Clicked="StartOverButton_Clicked" />
         </StackLayout>

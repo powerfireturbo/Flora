@@ -19,22 +19,22 @@ namespace Flora
 
         private void OptionOneButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new RefinePage());
         }
 
         private void OptionTwoButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new RefinePage());
         }
 
         private void OptionThreeButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new RefinePage());
         }
 
         private void StartOverButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new PickFromThreePage());
         }
     }
 }

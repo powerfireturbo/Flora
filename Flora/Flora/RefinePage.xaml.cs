@@ -34,17 +34,17 @@ namespace Flora
 
         private void ViewResultButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new PlantProfilePage());
         }
 
         private void ViewResultsOnMapButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new GpsPage());
         }
 
         private void StartOverButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new PickFromThreePage());
         }
     }
 }

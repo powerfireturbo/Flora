@@ -9,11 +9,11 @@
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand" />
             <Button x:Name="RefineButton"
-                    Margin="0,50,0,0"
+                    Margin="0,25,0,0"
                     Text="Refine Results"
                     Clicked="RefineButton_Clicked" />
             <Button x:Name="StartOverButton"
-                    Margin="0,50,0,0"
+                    Margin="0,25,0,0"
                     Text="Start Over"
                     Clicked="StartOverButton_Clicked" />
         </StackLayout>
