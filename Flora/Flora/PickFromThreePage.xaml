@@ -5,7 +5,8 @@
              x:Class="Flora.PickFromThreePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to the Pick From Three page"
+            <Label  x:Name="PickFromThreePrompt"
+                Text="How would you like to begin?"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Button x:Name="GpsButton"

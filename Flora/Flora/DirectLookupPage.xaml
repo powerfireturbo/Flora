@@ -4,7 +4,8 @@
              x:Class="Flora.DirectLookupPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to the Direct Lookup page!"
+            <Label x:Name="DirectLookupInstructions" 
+                Text="Please select the family, genus, and/or species."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

@@ -4,7 +4,8 @@
              x:Class="Flora.GpsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to the GPS page!"
+            <Label x:Name="GpsInstructions"
+                Text="You are here. You may select a sample below, resize your selection, or refine your search."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

@@ -4,7 +4,8 @@
              x:Class="Flora.RefinePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to the Refine page!"
+            <Label x:Name="RefineInstructions"
+                Text="Please select from the options below."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

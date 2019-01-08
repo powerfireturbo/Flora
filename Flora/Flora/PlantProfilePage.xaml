@@ -4,7 +4,8 @@
              x:Class="Flora.PlantProfilePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to the Plant Profile page!"
+            <Label x:Name="PlantProfileHeading"
+                Text="This will be a specific plant."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

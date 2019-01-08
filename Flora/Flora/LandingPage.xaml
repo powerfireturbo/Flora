@@ -6,13 +6,14 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Flora" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label  x:Name ="LandingPageTitle"
+            Text="Welcome to Flora" 
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand" />
         <Button x:Name="GetStartedButton"
-                Margin="0,50,0,0"
-                Text="Get Started"
-                Clicked="GetStartedButton_Clicked"/>
+            Margin="0,50,0,0"
+            Text="Get Started"
+            Clicked="GetStartedButton_Clicked"/>
     </StackLayout>
 
 </ContentPage>
