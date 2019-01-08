@@ -16,5 +16,25 @@ namespace Flora
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void OptionOneButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OptionTwoButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OptionThreeButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StartOverButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

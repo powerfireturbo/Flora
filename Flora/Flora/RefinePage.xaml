@@ -5,9 +5,33 @@
     <ContentPage.Content>
         <StackLayout>
             <Label x:Name="RefineInstructions"
-                Text="Please select from the options below."
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                   Text="Please select from the options below."
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="OptionOneButton"
+                    Margin="0,50,0,0"
+                    Text="Option One"
+                    Clicked="OptionOneButton_Clicked" />
+            <Button x:Name="OptionTwoButton"
+                    Margin="0,50,0,0"
+                    Text="Option Two"
+                    Clicked="OptionTwoButton_Clicked" />
+            <Button x:Name="OptionThreeButton"
+                    Margin="0,50,0,0"
+                    Text="Option Three"
+                    Clicked="OptionThreeButton_Clicked" />
+            <Button x:Name="ViewResultButton"
+                    Margin="0,50,0,0"
+                    Text="View Result"
+                    Clicked="ViewResultButton_Clicked" />
+            <Button x:Name="ViewResultsOnMapButton"
+                    Margin="0,50,0,0"
+                    Text="View Results on Map"
+                    Clicked="ViewResultsOnMapButton_Clicked" />
+            <Button x:Name="StartOverButton"
+                    Margin="0,50,0,0"
+                    Text="Start Over"
+                    Clicked="StartOverButton_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

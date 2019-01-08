@@ -4,10 +4,22 @@
              x:Class="Flora.DirectLookupPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="DirectLookupInstructions" 
-                Text="Please select the family, genus, and/or species."
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="DirectLookupInstructions"
+                   Text="Please select the family, genus, and/or species."
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="RefineButton"
+                    Margin="0,50,0,0"
+                    Text="Refine Results"
+                    Clicked="RefineButton_Clicked" />
+            <Button x:Name="ViewResultButton"
+                    Margin="0,50,0,0"
+                    Text="View Result"
+                    Clicked="ViewResultButton_Clicked" />
+            <Button x:Name="StartOverButton"
+                    Margin="0,50,0,0"
+                    Text="Start Over"
+                    Clicked="StartOverButton_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

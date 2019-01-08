@@ -5,9 +5,13 @@
     <ContentPage.Content>
         <StackLayout>
             <Label x:Name="PlantProfileHeading"
-                Text="This will be a specific plant."
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                   Text="This will be a specific plant."
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="StartOverButton"
+                    Margin="0,50,0,0"
+                    Text="Start Over"
+                    Clicked="StartOverButton_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

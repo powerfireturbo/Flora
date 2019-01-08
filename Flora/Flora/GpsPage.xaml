@@ -5,9 +5,17 @@
     <ContentPage.Content>
         <StackLayout>
             <Label x:Name="GpsInstructions"
-                Text="You are here. You may select a sample below, resize your selection, or refine your search."
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                   Text="You are here. You may select a sample below, resize your selection, or refine your search."
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="RefineButton"
+                    Margin="0,50,0,0"
+                    Text="Refine Results"
+                    Clicked="RefineButton_Clicked" />
+            <Button x:Name="StartOverButton"
+                    Margin="0,50,0,0"
+                    Text="Start Over"
+                    Clicked="StartOverButton_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

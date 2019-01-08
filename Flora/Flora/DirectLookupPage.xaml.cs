@@ -16,5 +16,20 @@ namespace Flora
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void RefineButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ViewResultButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StartOverButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
