@@ -16,5 +16,35 @@ namespace Flora
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void OptionOneButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OptionTwoButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OptionThreeButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ViewResultButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PlantProfilePage());
+        }
+
+        private void ViewResultsOnMapButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new GpsPage());
+        }
+
+        private void StartOverButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PickFromThreePage());
+        }
+    }
 }

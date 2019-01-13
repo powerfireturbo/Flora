@@ -4,9 +4,34 @@
              x:Class="Flora.RefinePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to the Refine page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="RefineInstructions"
+                   Text="Please select from the options below."
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="OptionOneButton"
+                    Margin="0,25,0,0"
+                    Text="Option One"
+                    Clicked="OptionOneButton_Clicked" />
+            <Button x:Name="OptionTwoButton"
+                    Margin="0,25,0,0"
+                    Text="Option Two"
+                    Clicked="OptionTwoButton_Clicked" />
+            <Button x:Name="OptionThreeButton"
+                    Margin="0,25,0,0"
+                    Text="Option Three"
+                    Clicked="OptionThreeButton_Clicked" />
+            <Button x:Name="ViewResultButton"
+                    Margin="0,25,0,0"
+                    Text="View Result"
+                    Clicked="ViewResultButton_Clicked" />
+            <Button x:Name="ViewResultsOnMapButton"
+                    Margin="0,25,0,0"
+                    Text="View Results on Map"
+                    Clicked="ViewResultsOnMapButton_Clicked" />
+            <Button x:Name="StartOverButton"
+                    Margin="0,25,0,0"
+                    Text="Start Over"
+                    Clicked="StartOverButton_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

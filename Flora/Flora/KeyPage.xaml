@@ -4,9 +4,26 @@
              x:Class="Flora.KeyPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to the Key page!!!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="KeyInstructions"
+                   Text="Please select from the options below."
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="OptionOneButton"
+                    Margin="0,25,0,0"
+                    Text="Option One"
+                    Clicked="OptionOneButton_Clicked" />
+            <Button x:Name="OptionTwoButton"
+                    Margin="0,25,0,0"
+                    Text="Option Two"
+                    Clicked="OptionTwoButton_Clicked" />
+            <Button x:Name="OptionThreeButton"
+                    Margin="0,25,0,0"
+                    Text="Option Three"
+                    Clicked="OptionThreeButton_Clicked" />
+            <Button x:Name="StartOverButton"
+                    Margin="0,25,0,0"
+                    Text="Start Over"
+                    Clicked="StartOverButton_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
