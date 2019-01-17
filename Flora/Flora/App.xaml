@@ -18,6 +18,18 @@
             <!-- Font palette -->
             <Color x:Key="fontLight">#ffffff</Color>
             <Color x:Key="fontDark">#000000</Color>
+            
+            <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+                <Setter Property="BackgroundColor" Value="{StaticResource backgroundLight}" />
+            </Style>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource primaryColor}" />
+                <Setter Property="BarTextColor" Value="{StaticResource fontLight}" />
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource secondaryColor}" />
+                <Setter Property="TextColor" Value="{StaticResource fontLight}" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
