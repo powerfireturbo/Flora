@@ -3,6 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Flora.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <!-- Primary palette is a grass green with lighter and darker variant -->
+            <Color x:Key="primaryColor">#66bb6a</Color>
+            <Color x:Key="primaryLight">#98ee99</Color>
+            <Color x:Key="primaryDark">#338a3e</Color>
+            <!-- Secondary palette is a bark brown with ligher and darker variant -->
+            <Color x:Key="secondaryColor">#8c6d62</Color>
+            <Color x:Key="secondaryLight">#bd9b8f</Color>
+            <Color x:Key="secondaryDark">#5e4238</Color>
+            <!-- Background palette -->
+            <Color x:Key="backgroundLight">#ffffff</Color>
+            <Color x:Key="backgroundDark">#bbbbbb</Color>
+            <!-- Font palette -->
+            <Color x:Key="fontLight">#ffffff</Color>
+            <Color x:Key="fontDark">#000000</Color>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
