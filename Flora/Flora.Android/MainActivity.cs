@@ -19,6 +19,14 @@ namespace Flora.Droid
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
+            // Set style for Android's status bar
+            Window window = this.Window;
+            window.ClearFlags(WindowManagerFlags.TranslucentStatus);
+            window.AddFlags(WindowManagerFlags.DrawsSystemBarBackgrounds);
+            window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#338a3e"));
+
+
             LoadApplication(new App());
         }
     }
