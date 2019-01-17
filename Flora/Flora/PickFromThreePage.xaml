@@ -6,19 +6,20 @@
     <ContentPage.Content>
         <StackLayout>
             <Label  x:Name="PickFromThreePrompt"
+                    Margin="0,30,0,30"
                     Text="How would you like to begin?"
                     VerticalOptions="CenterAndExpand" 
                     HorizontalOptions="CenterAndExpand" />
             <Button x:Name="GpsButton"
-                    Margin="0,25,0,0"
+                    Margin="0,0,0,10"
                     Text="GPS"
                     Clicked="GpsButton_Clicked"/>
             <Button x:Name="KeyButton"
-                    Margin="0,25,0,0"
+                    Margin="0,0,0,10"
                     Text="Key"
                     Clicked="KeyButton_Clicked"/>
             <Button x:Name="DirectLookupButton"
-                    Margin="0,25,0,0"
+                    Margin="0,0,0,200"
                     Text="Direct Lookup"
                     Clicked="DirectLookupButton_Clicked"/>
         </StackLayout>
