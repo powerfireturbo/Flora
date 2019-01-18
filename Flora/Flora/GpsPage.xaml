@@ -4,16 +4,20 @@
              x:Class="Flora.GpsPage">
     <ContentPage.Content>
         <StackLayout>
+            <Label x:Name="GpsDescription"
+                   Margin="10,30,10,0"
+                   Text="Samples of the plants below were all found within 15 miles of your current location."
+                   HorizontalOptions="CenterAndExpand" />
             <Label x:Name="GpsInstructions"
-                   Text="You are here. You may select a sample below, resize your selection, or refine your search."
-                   VerticalOptions="CenterAndExpand"
+                   Margin="10,0,10,30"
+                   Text="You can learn more about a plant by tapping on it's image, or you can refine your results."
                    HorizontalOptions="CenterAndExpand" />
             <Button x:Name="RefineButton"
-                    Margin="0,25,0,0"
+                    Margin="0,0,0,0"
                     Text="Refine Results"
                     Clicked="RefineButton_Clicked" />
             <Button x:Name="StartOverButton"
-                    Margin="0,25,0,0"
+                    Margin="0,0,0,0"
                     Text="Start Over"
                     Clicked="StartOverButton_Clicked" />
         </StackLayout>
