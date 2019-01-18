@@ -24,7 +24,6 @@
 
             <StackLayout VerticalOptions="End">
                 <Button x:Name="StartOverButton"
-                    Margin="0,25,0,0"
                     Text="Start Over"
                     Clicked="StartOverButton_Clicked" />
             </StackLayout>
