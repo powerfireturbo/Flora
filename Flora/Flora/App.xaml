@@ -16,8 +16,8 @@
             <Color x:Key="backgroundLight">#ffffff</Color>
             <Color x:Key="backgroundDark">#bbbbbb</Color>
             <!-- Font palette -->
-            <Color x:Key="fontLight">#eeeeee</Color>
-            <Color x:Key="fontDark">#000000</Color>
+            <Color x:Key="fontLight">#ffffff</Color>
+            <Color x:Key="fontDark">#444444</Color>
             
             <!-- Page-level styles -->
             <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
