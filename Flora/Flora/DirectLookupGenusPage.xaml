@@ -12,11 +12,9 @@
 
             <StackLayout VerticalOptions="CenterAndExpand">
                 <Button x:Name="ViewSpeciesButton"
-                        Margin="0,25,0,0"
                         Text="View Species"
                         Clicked="ViewSpeciesButton_Clicked" />
                 <Button x:Name="RefineButton"
-                        Margin="0,25,0,0"
                         Text="Refine Results"
                         Clicked="RefineButton_Clicked" />
             </StackLayout>

@@ -11,15 +11,12 @@
 
             <StackLayout VerticalOptions="CenterAndExpand">
                 <Button x:Name="OptionOneButton"
-                        Margin="0,25,0,0"
                         Text="Option One"
                         Clicked="OptionOneButton_Clicked" />
                 <Button x:Name="OptionTwoButton"
-                        Margin="0,25,0,0"
                         Text="Option Two"
                         Clicked="OptionTwoButton_Clicked" />
                 <Button x:Name="OptionThreeButton"
-                        Margin="0,25,0,0"
                         Text="Option Three"
                         Clicked="OptionThreeButton_Clicked" />
             </StackLayout>

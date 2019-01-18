@@ -12,15 +12,12 @@
             
             <StackLayout VerticalOptions="CenterAndExpand">
                 <Button x:Name="GpsButton"
-                        Margin="0,0,0,10"
                         Text="GPS"
                         Clicked="GpsButton_Clicked"/>
                 <Button x:Name="KeyButton"
-                        Margin="0,0,0,10"
                         Text="Key"
                         Clicked="KeyButton_Clicked"/>
                 <Button x:Name="DirectLookupFamilyButton"
-                        Margin="0,0,0,200"
                         Text="Direct Lookup"
                         Clicked="DirectLookupFamilyButton_Clicked"/>
             </StackLayout>

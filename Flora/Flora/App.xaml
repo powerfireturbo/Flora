@@ -32,9 +32,11 @@
             <Style TargetType="Label">
                 <Setter Property="Margin" Value="10,15,10,0" />
                 <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
                 <Setter Property="TextColor" Value="{StaticResource fontDark}" />
             </Style>
             <Style TargetType="Button">
+                <Setter Property="Margin" Value="0,0,0,0" />
                 <Setter Property="BackgroundColor" Value="{StaticResource secondaryColor}" />
                 <Setter Property="TextColor" Value="{StaticResource fontLight}" />
             </Style>
