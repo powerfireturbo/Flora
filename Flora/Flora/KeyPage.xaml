@@ -26,8 +26,8 @@
 
             <StackLayout VerticalOptions="End">
                 <Button x:Name="StartOverButton"
-                    Text="Start Over"
-                    Clicked="StartOverButton_Clicked" />
+                        Text="Start Over"
+                        Clicked="StartOverButton_Clicked" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

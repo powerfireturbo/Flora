@@ -5,15 +5,16 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout VerticalOptions="Start">
-                <Label x:Name="DirectLookupInstructions"
+                <Label x:Name="DirectLookupInstructions"   
+                       HorizontalTextAlignment="Start"
                        Text="If you know the plant's species, go ahead and select it below. Otherwise, click Refine to search within this genus." />
             </StackLayout>
 
             <StackLayout VerticalOptions="CenterAndExpand">
                 <Button x:Name="ViewResultButton"
-                    Margin="0,25,0,0"
-                    Text="View Result"
-                    Clicked="ViewResultButton_Clicked" />
+                        Margin="0,25,0,0"
+                        Text="View Result"
+                        Clicked="ViewResultButton_Clicked" />
                 <Button x:Name="RefineButton"
                         Margin="0,25,0,0"
                         Text="Refine Results"
@@ -22,8 +23,8 @@
 
             <StackLayout VerticalOptions="End">
                 <Button x:Name="StartOverButton"
-                    Text="Start Over"
-                    Clicked="StartOverButton_Clicked" />
+                        Text="Start Over"
+                        Clicked="StartOverButton_Clicked" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -6,14 +6,15 @@
         <StackLayout>
             <StackLayout VerticalOptions="Start">
                 <Label x:Name="DirectLookupInstructions"
+                       HorizontalTextAlignment="Start"
                        Text="If you know the plant's genus, go ahead and select it below. Otherwise, click Refine to search within this family." />
             </StackLayout>
 
             <StackLayout VerticalOptions="CenterAndExpand">
                 <Button x:Name="ViewSpeciesButton"
-                    Margin="0,25,0,0"
-                    Text="View Species"
-                    Clicked="ViewSpeciesButton_Clicked" />
+                        Margin="0,25,0,0"
+                        Text="View Species"
+                        Clicked="ViewSpeciesButton_Clicked" />
                 <Button x:Name="RefineButton"
                         Margin="0,25,0,0"
                         Text="Refine Results"

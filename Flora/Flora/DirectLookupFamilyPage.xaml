@@ -11,19 +11,19 @@
             
             <StackLayout VerticalOptions="CenterAndExpand">
                 <Button x:Name="ViewGenusesButton"
-                            Margin="0,25,0,0"
-                            Text="View Genuses"
-                            Clicked="ViewGenusesButton_Clicked" />
+                        Margin="0,25,0,0"
+                        Text="View Genuses"
+                        Clicked="ViewGenusesButton_Clicked" />
                 <Button x:Name="RefineButton"
-                            Margin="0,25,0,0"
-                            Text="Refine Results"
-                            Clicked="RefineButton_Clicked" />
+                        Margin="0,25,0,0"
+                        Text="Refine Results"
+                        Clicked="RefineButton_Clicked" />
             </StackLayout>
             
             <StackLayout VerticalOptions="End">
                 <Button x:Name="StartOverButton"
-                            Text="Start Over"
-                            Clicked="StartOverButton_Clicked" />
+                        Text="Start Over"
+                        Clicked="StartOverButton_Clicked" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

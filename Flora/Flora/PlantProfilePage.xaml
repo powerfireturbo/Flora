@@ -12,18 +12,18 @@
 
             <StackLayout VerticalOptions="CenterAndExpand">
                 <Label x:Name="PlantProfileHeading"
-                   Text="Genus species"
-                   HorizontalTextAlignment="Center"
-                   FontAttributes="Bold, Italic"/>
+                       Text="Genus species"
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold, Italic"/>
                 <Label x:Name="PlantProfileBody"
-                       Margin="10,0,10,0"
+                       HorizontalTextAlignment="Start"
                        Text="This is a specific plant. It has leaves and a stem and other plantlike qualities. People often use it for things, but some people leave it alone." />
             </StackLayout>
 
             <StackLayout VerticalOptions="End">
                 <Button x:Name="StartOverButton"
-                    Text="Start Over"
-                    Clicked="StartOverButton_Clicked" />
+                        Text="Start Over"
+                        Clicked="StartOverButton_Clicked" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

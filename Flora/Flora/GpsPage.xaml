@@ -6,22 +6,24 @@
         <StackLayout>
             <StackLayout VerticalOptions="Start">
                 <Label x:Name="GpsDescription"
+                       HorizontalTextAlignment="Start"
                        Text="Samples of the plants below were all found within 15 miles of your current location." />
-                <Label x:Name="GpsInstructions"
+                <Label x:Name="GpsInstructions"  
+                       HorizontalTextAlignment="Start"
                        Text="You can learn more about a plant by tapping on it's image, or you can refine your results." />
             </StackLayout>
 
             <StackLayout VerticalOptions="CenterAndExpand">
                 <Button x:Name="RefineButton"
-                    Margin="0,0,0,0"
-                    Text="Refine Results"
-                    Clicked="RefineButton_Clicked" />
+                        Margin="0,0,0,0"
+                        Text="Refine Results"
+                        Clicked="RefineButton_Clicked" />
             </StackLayout>
 
             <StackLayout VerticalOptions="End">
                 <Button x:Name="StartOverButton"
-                    Text="Start Over"
-                    Clicked="StartOverButton_Clicked" />
+                        Text="Start Over"
+                        Clicked="StartOverButton_Clicked" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
