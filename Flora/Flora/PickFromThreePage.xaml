@@ -18,10 +18,10 @@
                     Margin="0,0,0,10"
                     Text="Key"
                     Clicked="KeyButton_Clicked"/>
-            <Button x:Name="DirectLookupButton"
+            <Button x:Name="DirectLookupFamilyButton"
                     Margin="0,0,0,200"
                     Text="Direct Lookup"
-                    Clicked="DirectLookupButton_Clicked"/>
+                    Clicked="DirectLookupFamilyButton_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

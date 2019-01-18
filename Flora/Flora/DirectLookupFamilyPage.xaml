@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flora.DirectLookupFamilyPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="DirectLookupInstructions"
+                   Text="Select the plant's family."
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="RefineButton"
+                    Margin="0,25,0,0"
+                    Text="Refine Results"
+                    Clicked="RefineButton_Clicked" />
+            <Button x:Name="ViewResultButton"
+                    Margin="0,25,0,0"
+                    Text="View Result"
+                    Clicked="ViewResultButton_Clicked" />
+            <Button x:Name="StartOverButton"
+                    Margin="0,25,0,0"
+                    Text="Start Over"
+                    Clicked="StartOverButton_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

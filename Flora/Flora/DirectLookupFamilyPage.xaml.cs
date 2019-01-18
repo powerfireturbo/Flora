@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Flora
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class DirectLookupPage : ContentPage
+	public partial class DirectLookupFamilyPage : ContentPage
 	{
-		public DirectLookupPage ()
+		public DirectLookupFamilyPage ()
 		{
 			InitializeComponent ();
 		}

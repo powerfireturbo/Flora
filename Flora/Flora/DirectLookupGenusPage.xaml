@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Flora.DirectLookupPage">
+             x:Class="Flora.DirectLookupGenusPage">
     <ContentPage.Content>
         <StackLayout>
             <Label x:Name="DirectLookupInstructions"
-                   Text="Please select the family, genus, and/or species."
+                   Text="If you know the plant's genus, go ahead and select it below. Otherwise, click Refine to search within this family."
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand" />
             <Button x:Name="RefineButton"

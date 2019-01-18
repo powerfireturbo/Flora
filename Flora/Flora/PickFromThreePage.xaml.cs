@@ -27,9 +27,9 @@ namespace Flora
             Navigation.PushAsync(new KeyPage());
         }
 
-        private void DirectLookupButton_Clicked(object sender, EventArgs e)
+        private void DirectLookupFamilyButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new DirectLookupPage());
+            Navigation.PushAsync(new DirectLookupFamilyPage());
         }
     }
 }

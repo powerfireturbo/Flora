@@ -14,13 +14,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="DirectLookupFamilyPage.xaml.cs">
+      <DependentUpon>DirectLookupFamilyPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="LandingPage.xaml.cs">
       <DependentUpon>LandingPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="DirectLookupPage.xaml">
+    <EmbeddedResource Update="DirectLookupFamilyPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DirectLookupGenusPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DirectLookupSpeciesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="GpsPage.xaml">
