@@ -7,9 +7,7 @@
         <StackLayout>
             <Label  x:Name="PickFromThreePrompt"
                     Margin="0,30,0,30"
-                    Text="How would you like to begin?"
-                    VerticalOptions="CenterAndExpand" 
-                    HorizontalOptions="CenterAndExpand" />
+                    Text="How would you like to begin?" />
             <Button x:Name="GpsButton"
                     Margin="0,0,0,10"
                     Text="GPS"

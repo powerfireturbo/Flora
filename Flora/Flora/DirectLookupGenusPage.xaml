@@ -6,9 +6,7 @@
         <StackLayout>
             <StackLayout VerticalOptions="Start">
                 <Label x:Name="DirectLookupInstructions"
-                       Text="If you know the plant's genus, go ahead and select it below. Otherwise, click Refine to search within this family."
-                       VerticalOptions="CenterAndExpand"
-                       HorizontalOptions="CenterAndExpand" />
+                       Text="If you know the plant's genus, go ahead and select it below. Otherwise, click Refine to search within this family." />
             </StackLayout>
 
             <StackLayout VerticalOptions="CenterAndExpand">

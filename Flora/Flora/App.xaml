@@ -16,15 +16,22 @@
             <Color x:Key="backgroundLight">#ffffff</Color>
             <Color x:Key="backgroundDark">#bbbbbb</Color>
             <!-- Font palette -->
-            <Color x:Key="fontLight">#ffffff</Color>
+            <Color x:Key="fontLight">#eeeeee</Color>
             <Color x:Key="fontDark">#000000</Color>
             
+            <!-- Page-level styles -->
             <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
                 <Setter Property="BackgroundColor" Value="{StaticResource backgroundLight}" />
             </Style>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="{StaticResource primaryColor}" />
                 <Setter Property="BarTextColor" Value="{StaticResource fontLight}" />
+            </Style>
+
+            <!-- Element-level styles -->
+            <Style TargetType="Label">
+                <Setter Property="Margin" Value="10,15,10,0" />
+                <Setter Property="TextColor" Value="{StaticResource fontDark}" />
             </Style>
             <Style TargetType="Button">
                 <Setter Property="BackgroundColor" Value="{StaticResource secondaryColor}" />

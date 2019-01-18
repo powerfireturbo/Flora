@@ -6,13 +6,9 @@
         <StackLayout>
             <StackLayout VerticalOptions="Start">
                 <Label x:Name="GpsDescription"
-                       Margin="10,30,10,0"
-                       Text="Samples of the plants below were all found within 15 miles of your current location."
-                       HorizontalOptions="CenterAndExpand" />
+                       Text="Samples of the plants below were all found within 15 miles of your current location." />
                 <Label x:Name="GpsInstructions"
-                       Margin="10,0,10,30"
-                       Text="You can learn more about a plant by tapping on it's image, or you can refine your results."
-                       HorizontalOptions="CenterAndExpand" />
+                       Text="You can learn more about a plant by tapping on it's image, or you can refine your results." />
             </StackLayout>
 
             <StackLayout VerticalOptions="CenterAndExpand">

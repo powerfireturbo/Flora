@@ -6,9 +6,7 @@
         <StackLayout>
             <StackLayout VerticalOptions="Start">
                 <Label x:Name="DirectLookupInstructions"
-                       Text="Select the plant's family."
-                       VerticalOptions="CenterAndExpand"
-                       HorizontalOptions="CenterAndExpand" />
+                       Text="Select the plant's family."/>
             </StackLayout>
             
             <StackLayout VerticalOptions="CenterAndExpand">
