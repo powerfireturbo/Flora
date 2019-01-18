@@ -4,10 +4,16 @@
              x:Class="Flora.PlantProfilePage">
     <ContentPage.Content>
         <StackLayout>
+            <Image x:Name="PlantPicture"
+                   Source="plantPicture.jpg"
+                   Aspect="AspectFill" />
             <Label x:Name="PlantProfileHeading"
-                   Text="This will be a specific plant."
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
+                   Text="Genus species"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold, Italic"/>
+            <Label x:Name="PlantProfileBody"
+                   Margin="10,0,10,0"
+                   Text="This is a specific plant. It has leaves and a stem and other plantlike qualities. People often use it for things, but some people leave it alone." />
             <Button x:Name="StartOverButton"
                     Margin="0,25,0,0"
                     Text="Start Over"
