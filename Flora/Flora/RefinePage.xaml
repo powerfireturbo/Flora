@@ -24,10 +24,6 @@
                     Margin="0,25,0,0"
                     Text="View Result"
                     Clicked="ViewResultButton_Clicked" />
-            <Button x:Name="ViewResultsOnMapButton"
-                    Margin="0,25,0,0"
-                    Text="View Results on Map"
-                    Clicked="ViewResultsOnMapButton_Clicked" />
             <Button x:Name="StartOverButton"
                     Margin="0,25,0,0"
                     Text="Start Over"
