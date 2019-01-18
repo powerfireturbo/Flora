@@ -31,6 +31,7 @@
             <!-- Element-level styles -->
             <Style TargetType="Label">
                 <Setter Property="Margin" Value="10,15,10,0" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
                 <Setter Property="TextColor" Value="{StaticResource fontDark}" />
             </Style>
             <Style TargetType="Button">
