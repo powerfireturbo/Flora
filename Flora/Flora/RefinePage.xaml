@@ -4,29 +4,37 @@
              x:Class="Flora.RefinePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="RefineInstructions"
-                   Margin="10,30,10,20"
-                   Text="Please select from the options below to refine your search." />
-            <Button x:Name="OptionOneButton"
+            <StackLayout VerticalOptions="Start">
+                <Label x:Name="RefineInstructions"
+                       Margin="10,30,10,20"
+                       Text="Please select from the options below to refine your search." />
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Button x:Name="OptionOneButton"
                     Margin="0,0,0,0"
                     Text="Option One"
                     Clicked="OptionOneButton_Clicked" />
-            <Button x:Name="OptionTwoButton"
-                    Margin="0,0,0,0"
-                    Text="Option Two"
-                    Clicked="OptionTwoButton_Clicked" />
-            <Button x:Name="OptionThreeButton"
-                    Margin="0,0,0,0"
-                    Text="Option Three"
-                    Clicked="OptionThreeButton_Clicked" />
-            <Button x:Name="ViewResultButton"
-                    Margin="0,30,0,30"
-                    Text="View Result"
-                    Clicked="ViewResultButton_Clicked" />
-            <Button x:Name="StartOverButton"
+                <Button x:Name="OptionTwoButton"
+                        Margin="0,0,0,0"
+                        Text="Option Two"
+                        Clicked="OptionTwoButton_Clicked" />
+                <Button x:Name="OptionThreeButton"
+                        Margin="0,0,0,0"
+                        Text="Option Three"
+                        Clicked="OptionThreeButton_Clicked" />
+                <Button x:Name="ViewResultButton"
+                        Margin="0,30,0,30"
+                        Text="View Result"
+                        Clicked="ViewResultButton_Clicked" />
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End">
+                <Button x:Name="StartOverButton"
                     Margin="0,0,0,0"
                     Text="Start Over"
                     Clicked="StartOverButton_Clicked" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

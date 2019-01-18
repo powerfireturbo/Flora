@@ -4,22 +4,30 @@
              x:Class="Flora.DirectLookupFamilyPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="DirectLookupInstructions"
-                   Text="Select the plant's family."
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
-            <Button x:Name="ViewGenusesButton"
-                    Margin="0,25,0,0"
-                    Text="View Genuses"
-                    Clicked="ViewGenusesButton_Clicked" />
-            <Button x:Name="RefineButton"
-                    Margin="0,25,0,0"
-                    Text="Refine Results"
-                    Clicked="RefineButton_Clicked" />
-            <Button x:Name="StartOverButton"
-                    Margin="0,25,0,0"
-                    Text="Start Over"
-                    Clicked="StartOverButton_Clicked" />
+            <StackLayout VerticalOptions="Start">
+                <Label x:Name="DirectLookupInstructions"
+                       Text="Select the plant's family."
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Button x:Name="ViewGenusesButton"
+                            Margin="0,25,0,0"
+                            Text="View Genuses"
+                            Clicked="ViewGenusesButton_Clicked" />
+                <Button x:Name="RefineButton"
+                            Margin="0,25,0,0"
+                            Text="Refine Results"
+                            Clicked="RefineButton_Clicked" />
+            </StackLayout>
+            
+            <StackLayout VerticalOptions="End">
+                <Button x:Name="StartOverButton"
+                            Margin="0,25,0,0"
+                            Text="Start Over"
+                            Clicked="StartOverButton_Clicked" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

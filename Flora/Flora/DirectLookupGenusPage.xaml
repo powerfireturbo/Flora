@@ -4,22 +4,30 @@
              x:Class="Flora.DirectLookupGenusPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="DirectLookupInstructions"
-                   Text="If you know the plant's genus, go ahead and select it below. Otherwise, click Refine to search within this family."
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
-            <Button x:Name="ViewSpeciesButton"
+            <StackLayout VerticalOptions="Start">
+                <Label x:Name="DirectLookupInstructions"
+                       Text="If you know the plant's genus, go ahead and select it below. Otherwise, click Refine to search within this family."
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Button x:Name="ViewSpeciesButton"
                     Margin="0,25,0,0"
                     Text="View Species"
                     Clicked="ViewSpeciesButton_Clicked" />
-            <Button x:Name="RefineButton"
-                    Margin="0,25,0,0"
-                    Text="Refine Results"
-                    Clicked="RefineButton_Clicked" />
-            <Button x:Name="StartOverButton"
-                    Margin="0,25,0,0"
-                    Text="Start Over"
-                    Clicked="StartOverButton_Clicked" />
+                <Button x:Name="RefineButton"
+                        Margin="0,25,0,0"
+                        Text="Refine Results"
+                        Clicked="RefineButton_Clicked" />
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End">
+                <Button x:Name="StartOverButton"
+                        Margin="0,25,0,0"
+                        Text="Start Over"
+                        Clicked="StartOverButton_Clicked" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
