@@ -13,9 +13,6 @@
                 <Button x:Name="ViewGeneraButton"
                         Text="View Genera"
                         Clicked="ViewGeneraButton_Clicked" />
-                <Button x:Name="RefineButton"
-                        Text="Refine Results"
-                        Clicked="RefineButton_Clicked" />
             </StackLayout>
             
             <StackLayout VerticalOptions="End">
