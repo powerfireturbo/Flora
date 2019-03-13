@@ -17,7 +17,7 @@ namespace Flora
 			InitializeComponent ();
 		}
 
-        private void ViewGenusesButton_Clicked(object sender, EventArgs e)
+        private void ViewGeneraButton_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new DirectLookupGenusPage());
         }
