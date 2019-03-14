@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Flora.Model;
 
 namespace Flora
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class DirectLookupGenusPage : ContentPage
 	{
-		public DirectLookupGenusPage ()
+		public DirectLookupGenusPage (FloraData.StringData selectedFamily)
 		{
 			InitializeComponent ();
 		}

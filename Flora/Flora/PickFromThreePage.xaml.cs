@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Flora.Model;
 
 namespace Flora
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PickFromThreePage : ContentPage
 	{
+        FloraData floraData = new FloraData();
 		public PickFromThreePage ()
 		{
 			InitializeComponent ();

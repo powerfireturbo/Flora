@@ -1,35 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Flora.Model;
 
 namespace Flora
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class DirectLookupFamilyPage : ContentPage
 	{
+        FloraData floraData = new FloraData();
 		public DirectLookupFamilyPage ()
 		{
 			InitializeComponent ();
 		}
 
-        private void ViewGenusesButton_Clicked(object sender, EventArgs e)
+
+
+
+        protected async override void OnAppearing()
         {
-            Navigation.PushAsync(new DirectLookupGenusPage());
+            base.OnAppearing();
+            var coll = new ObservableCollection<FloraData.StringData>(await floraData.GetData());
+            listViewFamily.ItemsSource = coll;
         }
 
-        private void RefineButton_Clicked(object sender, EventArgs e)
+        void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Navigation.PushAsync(new RefinePage());
+            var selectedFamily = listViewFamily.SelectedItem as FloraData.StringData;
+            Navigation.PushAsync(new DirectLookupGenusPage(selectedFamily));
         }
 
-        private void StartOverButton_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new PickFromThreePage());
-        }
     }
 }

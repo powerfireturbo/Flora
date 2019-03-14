@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flora.Android", "Flora\Flor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flora.iOS", "Flora\Flora.iOS\Flora.iOS.csproj", "{F358E6BC-2B19-4FC1-A436-69DAB946DC15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flora", "Flora\Flora\Flora.csproj", "{BE3E8520-BE61-46D8-A9CD-ADBEC95888E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flora", "Flora\Flora\Flora.csproj", "{BE3E8520-BE61-46D8-A9CD-ADBEC95888E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

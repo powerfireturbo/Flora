@@ -3,26 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Flora.DirectLookupFamilyPage">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout VerticalOptions="Start">
-                <Label x:Name="DirectLookupInstructions"
-                       Text="Select the plant's family."/>
-            </StackLayout>
-            
-            <StackLayout VerticalOptions="CenterAndExpand">
-                <Button x:Name="ViewGenusesButton"
-                        Text="View Genuses"
-                        Clicked="ViewGenusesButton_Clicked" />
-                <Button x:Name="RefineButton"
-                        Text="Refine Results"
-                        Clicked="RefineButton_Clicked" />
-            </StackLayout>
-            
-            <StackLayout VerticalOptions="End">
-                <Button x:Name="StartOverButton"
-                        Text="Start Over"
-                        Clicked="StartOverButton_Clicked" />
-            </StackLayout>
+        <StackLayout VerticalOptions="Start">
+            <Label x:Name="DirectLookupInstructions"
+                       Text="Select the plant's Family."/>
+            <ListView x:Name="listViewFamily" ItemSelected="Handle_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding familyName}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
