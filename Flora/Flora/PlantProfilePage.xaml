@@ -11,19 +11,18 @@
             </StackLayout>
 
             <StackLayout VerticalOptions="CenterAndExpand">
-                <Label x:Name="PlantProfileHeading"
-                       Text="Genus species"
+                <Label x:Name="FamilyName"
+                       Text="{Binding familyName, StringFormat='Family: {0:F0}'}"
                        HorizontalTextAlignment="Center"
                        FontAttributes="Bold, Italic"/>
-                <Label x:Name="PlantProfileBody"
-                       HorizontalTextAlignment="Start"
-                       Text="This is a specific plant. It has leaves and a stem and other plantlike qualities. People often use it for things, but some people leave it alone." />
-            </StackLayout>
-
-            <StackLayout VerticalOptions="End">
-                <Button x:Name="StartOverButton"
-                        Text="Start Over"
-                        Clicked="StartOverButton_Clicked" />
+                <Label x:Name="GenusName"
+                       Text="{Binding genusName, StringFormat='Genus: {0:F0}'}"
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold, Italic"/>
+                <Label x:Name="ScientificName"
+                       Text="{Binding scientificName, StringFormat='Scientific Name: {0:F0}'}"
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold, Italic"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

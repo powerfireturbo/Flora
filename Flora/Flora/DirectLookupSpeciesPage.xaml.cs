@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,24 +13,27 @@ namespace Flora
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class DirectLookupSpeciesPage : ContentPage
 	{
-		public DirectLookupSpeciesPage ()
+        public string familyName;
+        public string genusName;
+        ObservableCollection<string> scientificNameList;
+		public DirectLookupSpeciesPage (string familyName, string genusName, List<string> scientificNameListSorted)
 		{
 			InitializeComponent ();
+            this.familyName = familyName;
+            this.genusName = genusName;
+            this.scientificNameList = new ObservableCollection<string>(scientificNameListSorted);
 		}
 
-        private void ViewResultButton_Clicked(object sender, EventArgs e)
+        protected override void OnAppearing()
         {
-            Navigation.PushAsync(new PlantProfilePage());
+            base.OnAppearing();
+            listViewScientificName.ItemsSource = scientificNameList;
         }
 
-        private void RefineButton_Clicked(object sender, EventArgs e)
+        void Scientific_Name_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Navigation.PushAsync(new RefinePage());
-        }
-
-        private void StartOverButton_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new PickFromThreePage());
+            string selectedScientificName = listViewScientificName.SelectedItem as string;
+            Navigation.PushAsync(new PlantProfilePage(familyName, genusName, selectedScientificName));
         }
     }
 }

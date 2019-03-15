@@ -4,26 +4,9 @@
              x:Class="Flora.DirectLookupSpeciesPage">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout VerticalOptions="Start">
-                <Label x:Name="DirectLookupInstructions"   
-                       HorizontalTextAlignment="Start"
-                       Text="If you know the plant's species, go ahead and select it below. Otherwise, click Refine to search within this genus." />
-            </StackLayout>
-
-            <StackLayout VerticalOptions="CenterAndExpand">
-                <Button x:Name="ViewResultButton"
-                        Text="View Result"
-                        Clicked="ViewResultButton_Clicked" />
-                <Button x:Name="RefineButton"
-                        Text="Refine Results"
-                        Clicked="RefineButton_Clicked" />
-            </StackLayout>
-
-            <StackLayout VerticalOptions="End">
-                <Button x:Name="StartOverButton"
-                        Text="Start Over"
-                        Clicked="StartOverButton_Clicked" />
-            </StackLayout>
+            <Label x:Name="DirectLookupInstructions"
+                       Text="Select the plant's Scientific Name." />
+            <ListView x:Name="listViewScientificName" ItemSelected="Scientific_Name_ItemSelected"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

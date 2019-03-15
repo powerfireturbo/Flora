@@ -19,12 +19,10 @@ namespace Flora.Model
             public string genusName { get; set; }
         }
 
-        List<StringData> familyList = new List<StringData>();
-        public async Task<List<StringData>> GetData()
+        string[] data;
+        public async Task<string[]> GetData()
         {
-            
-            List<StringData> genusList = new List<StringData>();
-            string uri = "https://search.idigbio.org/v2/search/records?fields=[%22scientificname%22,%22genus%22,%22family%22,%22hasImage%22]&rq={\"country\":\"United States\",\"county\":\"floyd\",\"municipality\":\"New Albany\",\"kingdom\":\"plantae\"}&no_attribution=true&limit=2";
+            string uri = "https://search.idigbio.org/v2/search/records?fields=[%22scientificname%22,%22genus%22,%22family%22,%22hasImage%22]&rq={\"county\":\"floyd\",\"municipality\":\"New Albany\",\"kingdom\":\"plantae\"}&no_attribution=true&limit=3";
             Debug.WriteLine("uri string is: " + uri);
             HttpClient client = new HttpClient();
             try
@@ -36,15 +34,22 @@ namespace Flora.Model
                     string content = await response.Content.ReadAsStringAsync();
                     PlantObject.RootObject dynObj = Newtonsoft.Json.JsonConvert.DeserializeObject<PlantObject.RootObject>(content);
                     Debug.WriteLine("deserialization completed...");
+                    data = new string[(dynObj.itemCount * 3)];
+                    Debug.WriteLine("itemCount is " + dynObj.itemCount);
+                    int i = 0;
                     foreach (var data1 in dynObj.items)
                     {
                         Debug.WriteLine("foreach loop iteration");
                         Debug.WriteLine("family is: " + data1.indexTerms.family);
-                        familyList.Add(new StringData() { familyName = data1.indexTerms.family });
-                        Debug.WriteLine("familyList newest addition is " + familyList.Last());
+                        data[i] = data1.indexTerms.family;
+                        Debug.WriteLine("data[i] newest addition is " + data[i]);
                         Debug.WriteLine("genus is: " + data1.indexTerms.genus);
-                        genusList.Add(new StringData() { genusName = data1.indexTerms.genus });
+                        data[i+1] = data1.indexTerms.family + " " + data1.indexTerms.genus;
+                        Debug.WriteLine("data[i+1] newest addition is " + data[i+1]);
                         Debug.WriteLine("scientific name is: " + data1.indexTerms.scientificname);
+                        data[i + 2] = data1.indexTerms.scientificname;
+                        Debug.WriteLine("data[i+2] newest addition is " + data[i + 2]);
+                        i+=3;
                     }
                 }
             }
@@ -52,7 +57,7 @@ namespace Flora.Model
             {
                 Console.WriteLine("Error retrieving Json data: " + e);
             }
-            return familyList;
+            return data;
         }//GetData end"
 
     }//FloraData end

@@ -19,9 +19,6 @@
                 <Button x:Name="OptionThreeButton"
                         Text="Option Three"
                         Clicked="OptionThreeButton_Clicked" />
-                <Button x:Name="ViewResultButton"
-                        Text="View Result"
-                        Clicked="ViewResultButton_Clicked" />
             </StackLayout>
 
             <StackLayout VerticalOptions="End">

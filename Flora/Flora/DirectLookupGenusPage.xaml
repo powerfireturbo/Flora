@@ -6,7 +6,7 @@
         <StackLayout>
             <Label x:Name="DirectLookupInstructions"
                        Text="Select the plant's Genus." />
-            <ListView x:Name="listViewGenus"/>
+            <ListView x:Name="listViewGenus" ItemSelected="Genus_ItemSelected"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

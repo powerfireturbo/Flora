@@ -7,30 +7,43 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Flora.Model;
+using System.Collections.ObjectModel;
 
 namespace Flora
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class DirectLookupGenusPage : ContentPage
 	{
-		public DirectLookupGenusPage (FloraData.StringData selectedFamily)
+        public string familyName;
+        ObservableCollection<string> genusList = new ObservableCollection<string>();
+        List<string> scientificNameList = new List<string>();
+        public DirectLookupGenusPage (string selectedFamily, List<string> genusList, List<string> scientificNameList)
 		{
 			InitializeComponent ();
+            this.familyName = selectedFamily;
+            this.genusList = new ObservableCollection<string>(genusList);
+            this.scientificNameList = scientificNameList;
 		}
 
-        private void ViewSpeciesButton_Clicked(object sender, EventArgs e)
+        protected override void OnAppearing()
         {
-            Navigation.PushAsync(new DirectLookupSpeciesPage());
+            base.OnAppearing();
+            listViewGenus.ItemsSource = genusList;
         }
 
-        private void RefineButton_Clicked(object sender, EventArgs e)
+        void Genus_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Navigation.PushAsync(new RefinePage());
-        }
-
-        private void StartOverButton_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new PickFromThreePage());
+            string selectedGenus = listViewGenus.SelectedItem as string;
+            List<string> scientificNameListSorted = new List<string>();
+            foreach(string item in scientificNameList)
+            {
+                if(item.Contains(selectedGenus))
+                {
+                    scientificNameListSorted.Add(item);
+                }
+            }
+            scientificNameListSorted.Sort();
+            Navigation.PushAsync(new DirectLookupSpeciesPage(familyName, selectedGenus, scientificNameListSorted));
         }
     }
 }

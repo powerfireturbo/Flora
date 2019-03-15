@@ -12,14 +12,24 @@ namespace Flora
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PlantProfilePage : ContentPage
 	{
-		public PlantProfilePage ()
+        public string familyName { get; }
+        public string genusName { get; }
+        public string scientificName { get; }
+		public PlantProfilePage (string familyName, string genusName, string scientificName)
 		{
 			InitializeComponent ();
+            this.familyName = familyName;
+            this.genusName = genusName;
+            this.scientificName = scientificName;
 		}
 
-        private void StartOverButton_Clicked(object sender, EventArgs e)
+        protected override void OnAppearing()
         {
-            Navigation.PushAsync(new PickFromThreePage());
+            base.OnAppearing();
+            FamilyName.BindingContext = this;
+            GenusName.BindingContext = this;
+            ScientificName.BindingContext = this;
         }
+
     }
 }

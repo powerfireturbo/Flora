@@ -6,13 +6,7 @@
         <StackLayout VerticalOptions="Start">
             <Label x:Name="DirectLookupInstructions"
                        Text="Select the plant's Family."/>
-            <ListView x:Name="listViewFamily" ItemSelected="Handle_ItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding familyName}"/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <ListView x:Name="listViewFamily" ItemSelected="Family_ItemSelected"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
