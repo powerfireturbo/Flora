@@ -6,7 +6,6 @@
         <StackLayout>
             <StackLayout VerticalOptions="Start">
             <Image x:Name="PlantPicture"
-                   Source="plantPicture.jpg"
                    Aspect="AspectFill" />
             </StackLayout>
 

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Diagnostics;
 
 namespace Flora
 {
@@ -16,24 +17,37 @@ namespace Flora
         public string familyName;
         public string genusName;
         ObservableCollection<string> scientificNameList;
-		public DirectLookupSpeciesPage (string familyName, string genusName, List<string> scientificNameListSorted)
-		{
-			InitializeComponent ();
+        List<string> hasImageList = new List<string>();
+        public DirectLookupSpeciesPage(string familyName, string genusName, List<string> scientificNameListSorted, List<string> hasImageList)
+        {
+            InitializeComponent();
             this.familyName = familyName;
             this.genusName = genusName;
             this.scientificNameList = new ObservableCollection<string>(scientificNameListSorted);
-		}
+            this.hasImageList = hasImageList;
+        }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
             listViewScientificName.ItemsSource = scientificNameList;
         }
-
+        public string hasImage;
         void Scientific_Name_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             string selectedScientificName = listViewScientificName.SelectedItem as string;
-            Navigation.PushAsync(new PlantProfilePage(familyName, genusName, selectedScientificName));
+
+            foreach (string item in hasImageList)
+            {
+                if (item.Contains(selectedScientificName))
+                {
+                    string[] pieces = item.Split(null);
+                    Debug.WriteLine("pieces[0] is " + pieces[0]);
+                    Debug.WriteLine("pieces[1] is " + pieces[1]);
+                    hasImage = pieces[0];
+                }
+            }
+            Navigation.PushAsync(new PlantProfilePage(familyName, genusName, selectedScientificName, hasImage));
         }
     }
 }

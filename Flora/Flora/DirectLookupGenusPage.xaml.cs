@@ -17,13 +17,15 @@ namespace Flora
         public string familyName;
         ObservableCollection<string> genusList = new ObservableCollection<string>();
         List<string> scientificNameList = new List<string>();
-        public DirectLookupGenusPage (string selectedFamily, List<string> genusList, List<string> scientificNameList)
-		{
-			InitializeComponent ();
+        List<string> hasImageList = new List<string>();
+        public DirectLookupGenusPage(string selectedFamily, List<string> genusList, List<string> scientificNameList, List<string> hasImageList)
+        {
+            InitializeComponent();
             this.familyName = selectedFamily;
             this.genusList = new ObservableCollection<string>(genusList);
             this.scientificNameList = scientificNameList;
-		}
+            this.hasImageList = hasImageList;
+        }
 
         protected override void OnAppearing()
         {
@@ -35,15 +37,25 @@ namespace Flora
         {
             string selectedGenus = listViewGenus.SelectedItem as string;
             List<string> scientificNameListSorted = new List<string>();
-            foreach(string item in scientificNameList)
+            foreach (string item in scientificNameList)
             {
-                if(item.Contains(selectedGenus))
+                if (item.Contains(selectedGenus))
                 {
                     scientificNameListSorted.Add(item);
                 }
             }
             scientificNameListSorted.Sort();
-            Navigation.PushAsync(new DirectLookupSpeciesPage(familyName, selectedGenus, scientificNameListSorted));
+            Navigation.PushAsync(new DirectLookupSpeciesPage(familyName, selectedGenus, scientificNameListSorted, hasImageList));
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            //genusPlusFamily.Clear();
+            //genusList.Clear();
+            //familyList.Clear();
+            scientificNameList.Clear();
+            //hasImageList.Clear();
         }
     }
 }
