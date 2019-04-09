@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Flora"
+             x:Class="Flora.PickFromThreePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start">
+                <Label  x:Name="PickFromThreePrompt"
+                    Text="How would you like to begin?" />
+            </StackLayout>
+            
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Button x:Name="GpsButton"
+                        Text="GPS"
+                        Clicked="GpsButton_Clicked"/>
+                <Button x:Name="KeyButton"
+                        Text="Key"
+                        Clicked="KeyButton_Clicked"/>
+                <Button x:Name="DirectLookupFamilyButton"
+                        Text="Direct Lookup"
+                        Clicked="DirectLookupFamilyButton_Clicked"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End">
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

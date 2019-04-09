@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flora.RefinePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start">
+                <Label x:Name="RefineInstructions"
+                       Text="Please select from the options below to refine your search." />
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Button x:Name="OptionOneButton"
+                        Text="Option One"
+                        Clicked="OptionOneButton_Clicked" />
+                <Button x:Name="OptionTwoButton"
+                        Text="Option Two"
+                        Clicked="OptionTwoButton_Clicked" />
+                <Button x:Name="OptionThreeButton"
+                        Text="Option Three"
+                        Clicked="OptionThreeButton_Clicked" />
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End">
+                <Button x:Name="StartOverButton"
+                    Text="Start Over"
+                    Clicked="StartOverButton_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flora.DirectLookupSpeciesPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="DirectLookupInstructions"
+                       Text="Select the plant's Scientific Name." />
+            <ListView x:Name="listViewScientificName" ItemSelected="Scientific_Name_ItemSelected"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

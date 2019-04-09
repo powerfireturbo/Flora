@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flora.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- Primary palette is a grass green with lighter and darker variant -->
+            <Color x:Key="primaryColor">#66bb6a</Color>
+            <Color x:Key="primaryLight">#98ee99</Color>
+            <Color x:Key="primaryDark">#338a3e</Color>
+            <!-- Secondary palette is a bark brown with ligher and darker variant -->
+            <Color x:Key="secondaryColor">#8c6d62</Color>
+            <Color x:Key="secondaryLight">#bd9b8f</Color>
+            <Color x:Key="secondaryDark">#5e4238</Color>
+            <!-- Background palette -->
+            <Color x:Key="backgroundLight">#ffffff</Color>
+            <Color x:Key="backgroundDark">#bbbbbb</Color>
+            <!-- Font palette -->
+            <Color x:Key="fontLight">#ffffff</Color>
+            <Color x:Key="fontDark">#444444</Color>
+            
+            <!-- Page-level styles -->
+            <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+                <Setter Property="BackgroundColor" Value="{StaticResource backgroundLight}" />
+            </Style>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource primaryColor}" />
+                <Setter Property="BarTextColor" Value="{StaticResource fontLight}" />
+            </Style>
+
+            <!-- Element-level styles -->
+            <Style TargetType="Label">
+                <Setter Property="Margin" Value="10,15,10,0" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="TextColor" Value="{StaticResource fontDark}" />
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="Margin" Value="0,0,0,0" />
+                <Setter Property="BackgroundColor" Value="{StaticResource secondaryColor}" />
+                <Setter Property="TextColor" Value="{StaticResource fontLight}" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

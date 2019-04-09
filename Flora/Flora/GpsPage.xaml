@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flora.GpsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start">
+                <Label x:Name="GpsDescription"
+                       HorizontalTextAlignment="Start"
+                       Text="Samples of the plants below were all found within 15 miles of your current location." />
+                <Label x:Name="GpsInstructions"  
+                       HorizontalTextAlignment="Start"
+                       Text="You can learn more about a plant by tapping on it's image, or you can refine your results." />
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Button x:Name="RefineButton"
+                        Text="Refine Results"
+                        Clicked="RefineButton_Clicked" />
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End">
+                <Button x:Name="StartOverButton"
+                        Text="Start Over"
+                        Clicked="StartOverButton_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
